@@ -1,0 +1,9 @@
+Django == 3.2.9
+python-dateutil
+pillow
+pandas
+numpy
+requests
+scikit-learn
+matplotlib
+tensorflow
