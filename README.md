@@ -64,9 +64,11 @@ python manage.py showmigrations [app_name]
 
 12. 데이터베이스 생성 후 django ORM모델로 생성하는 명령어
 ```python
-python manage.py inspectdb > [app_name]/models.py --database 'external' #config/settings.py에 설정된 데이터베이스 이름. java의 JNDI 이름과 비슷하게 생각하면 된다., --database 옵션은 두개이상의 데이터베이스를 사용할 때만 사용한다.
+python manage.py inspectdb > [app_name]/models.py --database 'external' 
+#config/settings.py에 설정된 데이터베이스 이름. java의 JNDI 이름과 비슷하게 생각하면 된다.
+# , --database 옵션은 두개이상의 데이터베이스를 사용할 때만 사용한다.
 ```
 * 주의점
-  ## 외부 테이블의 Primary Key 를 제대로 못 가져오는 경우가 있다. 그런 경우에는 생성된 모델의 필드에 primary_key=True 를 추가해주면 된다.
-  ## 불러온 외부 테이블 구조를 변경하고 싶다면 Meta 클래스의 managed=False 를 managed=True 로 변경해주면 된다.
-  ## 몇몇 부분들은 수작업으로 수정해주어야 한다.
+  * 외부 테이블의 Primary Key 를 제대로 못 가져오는 경우가 있다. 그런 경우에는 생성된 모델의 필드에 primary_key=True 를 추가해주면 된다.
+  * 불러온 외부 테이블 구조를 변경하고 싶다면 Meta 클래스의 managed=False 를 managed=True 로 변경해주면 된다.
+  * 몇몇 부분들은 수작업으로 수정해주어야 한다.
