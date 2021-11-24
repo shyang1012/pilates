@@ -7,3 +7,7 @@ requests
 scikit-learn
 matplotlib
 tensorflow
+djangorestframework
+markdown       # Markdown support for the browsable API.
+django-filter  # Filtering support
+psycopg2 # postgresql
