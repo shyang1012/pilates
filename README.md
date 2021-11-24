@@ -57,7 +57,7 @@ python manage.py migrate [app_name] [migration_name]
 makemigrations와 같이 app_name을 지정해서 특정 app만 migrate 할 수 있으며 app_name 뒤에 마이그레이션 파일의 이름을 지정하면 해당 번호(버전)의 마이그레이션을 적용(이전버전으로 되돌리기도 가능)
 
 
-1.  프로젝트의 마이그래이션 적용여부를 확인하는 명령어
+11.  프로젝트의 마이그래이션 적용여부를 확인하는 명령어
 ```python
 python manage.py showmigrations [app_name]
 ```
